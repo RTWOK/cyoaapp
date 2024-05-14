@@ -1,0 +1,28 @@
+@use './predefined/constants.scss' as constants;
+@use './predefined/fontsize.scss' as fontsize;
+
+$simpleCard-maxWidth: 320px;
+
+.simpleCard {
+    box-shadow: constants.$default-box-shadow;
+    max-width: $simpleCard-maxWidth;
+    background: constants.$color-primary;
+    @include fontsize.default-font-size;
+
+    &__image {
+       img {
+        width: 100%;
+       } 
+    }
+
+    &__text {
+        &__wrapper {
+            margin: constants.$default-gutter;
+        }
+
+        &__header {
+            @include fontsize.default-font-size-h3;
+            margin-bottom: constants.$default-gutter;
+        }
+    }
+}

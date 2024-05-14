@@ -1,0 +1,31 @@
+@mixin default-font-size {
+    font-size: 16px;
+
+    @media screen and (min-width:720px) {
+        font-size: 20px;
+    }
+}
+
+@mixin default-font-size-h1 {
+    font-size: 42px;
+
+    @media screen and (min-width:720px) {
+        font-size: 60px;
+    }
+}
+
+@mixin default-font-size-h2 {
+    font-size: 36px;
+
+    @media screen and (min-width:720px) {
+        font-size: 42px;
+    }
+}
+
+@mixin default-font-size-h3 {
+    font-size: 28px;
+
+    @media screen and (min-width:720px) {
+        font-size: 36px;
+    }
+}
