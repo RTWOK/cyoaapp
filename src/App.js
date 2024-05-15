@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/scss/Base.scss';
 import { SimpleCard } from './components/exports'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Edit <code>src/App.js</code> and save to reload.        
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-        <SimpleCard />
-        <SimpleCard />
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="container--row container--center">
+                <SimpleCard data={
+                    {    
+                        imageUrl: 'https://picsum.photos/300/300',
+                        header: 'Lorem Ipsum',
+                        bodytext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi quaerat et voluptatibus. Veritatis, voluptatum repellat odio fugiat aut odit, optio eos minus non quia ipsa eum quo. Laboriosam, obcaecati!'
+                    }
+                }/>
+                <SimpleCard data={
+                    {    
+                        imageUrl: 'https://picsum.photos/300/300',
+                        header: 'Lorem Ipsum',
+                        bodytext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi quaerat et voluptatibus. Veritatis, voluptatum repellat odio fugiat aut odit, optio eos minus non quia ipsa eum quo. Laboriosam, obcaecati!'
+                    }
+                }/>
+                <SimpleCard data={
+                    {    
+                        imageUrl: 'https://picsum.photos/300/300',
+                        header: 'Lorem Ipsum',
+                        bodytext: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi quaerat et voluptatibus. Veritatis, voluptatum repellat odio fugiat aut odit, optio eos minus non quia ipsa eum quo. Laboriosam, obcaecati!'
+                    }
+                }/>
+            </div>
+        </div>
+    );
 }
 
 export default App;

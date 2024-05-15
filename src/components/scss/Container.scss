@@ -1,0 +1,14 @@
+@use './predefined/constants.scss' as constants;
+
+.container {
+    &--row {
+        margin: constants.$default-gutter 0;
+        gap: constants.$default-gutter;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &--center {
+        justify-content: center;
+    }
+}
