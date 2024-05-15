@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { SimpleCard } from './components/componentImportRepository'
+import { SimpleCard } from './components/exports'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
+        <SimpleCard />
         <SimpleCard />
       </header>
     </div>
